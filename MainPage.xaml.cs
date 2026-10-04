@@ -26,6 +26,6 @@ public partial class MainPage : ContentPage
         if (d.Date > DateTime.Today.AddYears(-age)) age--;
 
         await Shell.Current.GoToAsync(
-            $"{nameof(ResultatPage)}?nom={entryNom.Text}&age={age}");
+            $"{nameof(Views.ResultatPage)}?nom={entryNom.Text}&age={age}");
     }
 }
